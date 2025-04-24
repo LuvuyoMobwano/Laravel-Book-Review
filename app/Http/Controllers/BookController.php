@@ -33,7 +33,7 @@ class BookController extends Controller
             // $cacheKey, 
             // 3600, 
             // fn() => 
-            $books->get();
+            $books->paginate(25);
         //);
 
         return view('books.index', ['books' => $books]);

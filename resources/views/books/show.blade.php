@@ -17,6 +17,15 @@
     </div>
   </div>
 
+  <div class="mb-4 flex items-center gap-4">
+    <a href="{{ route('books.reviews.create', $book) }}" class="reset-link">
+      Add a review!
+    </a>
+    <a href="{{ route('books.index') }}" class="cancel-btn">
+      Return to book list
+    </a>
+  </div>
+
   <div>
     <h2 class="mb-4 text-xl font-semibold">Reviews</h2>
     <ul>

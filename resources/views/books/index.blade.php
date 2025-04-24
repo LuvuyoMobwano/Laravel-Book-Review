@@ -60,4 +60,10 @@
         </li>
        @endforelse
     </ul>
+    @if ($books->hasPages())
+        <nav class="mt-6">
+         {{ $books->withQueryString()->links() }}
+        </nav>
+    @endif
+
 @endsection
